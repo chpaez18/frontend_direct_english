@@ -142,7 +142,7 @@ export default {
                     precio : this.state.producto.precio,
                     descripcion : this.state.producto.descripcion
                 }
-                axios.post('http://directenglish.test/api/productos/add',
+                axios.post('http://localhost/backend_direct_english/public/api/productos/add',
                     qs.stringify(datosEnviar)
                 ).then(()=>{
                     this.$swal({icon:"success", title: 'Producto agregado con éxito'})

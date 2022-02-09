@@ -17,7 +17,7 @@ export default {
            window.location.href = `/productos/editar/${this.row.id}`
         },
         btnEliminar(){
-            axios.put(`http://directenglish.test/api/productos/delete/${this.row.id}`)
+            axios.put(`http://localhost/backend_direct_english/public/api/productos/delete/${this.row.id}`)
             .then(() =>{
                 //console.log(datos)
                 this.$swal({icon:"success", title: 'Producto eliminado'})

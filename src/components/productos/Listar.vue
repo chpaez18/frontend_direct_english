@@ -35,7 +35,7 @@ export default {
     data(){
         return {
             datatable: {
-                url: 'http://directenglish.test/api/productos',
+                url: 'http://localhost/backend_direct_english/public/api/productos',
                 isSearch: false,
                 isLengthMenu: false,
                 columns: [       

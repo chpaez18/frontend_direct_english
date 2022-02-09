@@ -104,7 +104,7 @@ export default {
     methods:{
             
         consultarInfoProducto(){
-            axios.get('http://directenglish.test/api/productos/'+this.$route.params.id)
+            axios.get('http://localhost/backend_direct_english/public/api/productos/'+this.$route.params.id)
             .then((datos) =>{
                 this.producto = datos.data
                 console.log(datos.data)
@@ -121,7 +121,7 @@ export default {
                 precio : this.producto.precio,
                 descripcion : this.producto.descripcion
             }
-            axios.put('http://directenglish.test/api/productos/update/'+this.$route.params.id,
+            axios.put('http://localhost/backend_direct_english/public/api/productos/update/'+this.$route.params.id,
                 qs.stringify(datosEnviar)
             ).then(()=>{
                 this.$swal({icon:"success", title: 'Producto actualizado con éxito'})

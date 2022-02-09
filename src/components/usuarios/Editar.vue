@@ -105,7 +105,7 @@ export default {
     methods:{
             
         consultarInfoUsuario(){
-            axios.get('http://directenglish.test/api/usuarios/'+this.$route.params.id)
+            axios.get('http://localhost/backend_direct_english/public/api/usuarios/'+this.$route.params.id)
             .then((datos) =>{
                 this.usuario = datos.data
                 console.log(datos.data)
@@ -122,7 +122,7 @@ export default {
                 fecha_nacimiento : this.usuario.fecha_nacimiento,
                 correo : this.usuario.correo,
             }
-            axios.put('http://directenglish.test/api/usuarios/update/'+this.$route.params.id,
+            axios.put('http://localhost/backend_direct_english/public/api/usuarios/update/'+this.$route.params.id,
                 qs.stringify(datosEnviar)
             ).then(()=>{
                 this.$swal({icon:"success", title: 'Usuario actualizado con éxito'})

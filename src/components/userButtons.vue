@@ -18,7 +18,7 @@ export default {
            window.location.href = `/usuarios/editar/${this.row.id}`
         },
         btnEliminar(){
-            axios.put(`http://directenglish.test/api/usuarios/delete/${this.row.id}`)
+            axios.put(`http://localhost/backend_direct_english/public/api/usuarios/delete/${this.row.id}`)
             .then(() =>{
                 //console.log(datos)
                 this.$swal({icon:"success", title: 'Usuario eliminado'})

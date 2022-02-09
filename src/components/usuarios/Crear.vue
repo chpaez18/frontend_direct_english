@@ -167,7 +167,7 @@ export default {
                     password : this.state.usuario.password
                 }
                 console.log(datosEnviar)
-                axios.post('http://directenglish.test/api/usuarios/add',
+                axios.post('http://localhost/backend_direct_english/public/api/usuarios/add',
                     qs.stringify(datosEnviar)
                 ).then(()=>{
                     this.$swal({icon:"success", title: 'Usuario agregado con éxito'})
