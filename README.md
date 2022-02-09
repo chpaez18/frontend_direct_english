@@ -1,4 +1,4 @@
-# phonebook
+# Direct English
 
 ## Project setup
 ```
