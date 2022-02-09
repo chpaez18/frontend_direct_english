@@ -1,0 +1,2 @@
+npm run serve
+para correr el proyecto
